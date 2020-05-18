@@ -5,7 +5,6 @@ bool handler(int data){
     int n = rand()%5;
     printf("Thread: %p Run Test:%d--sleep %d esc\n",(void*)pthread_self(),data,n);
 }
-
 int main()
 {
     int i;

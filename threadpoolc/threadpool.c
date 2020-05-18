@@ -20,7 +20,6 @@ typedef  struct threadpool_task {
 }threadpool_task_t;   //各子进程任务结构体
 
 //描述线程池相关信息
-
 struct threadpool_t{
         pthread_mutex_t lock;                               //用于锁住该结构体
         pthread_mutex_t thread_counter;        //记录忙状态线程个数的锁  busy_thr_num 
@@ -36,7 +35,6 @@ struct threadpool_t{
         int live_thr_num;         //当前存活线程个数
         int busy_thr_num;       //忙状态线程个数
         int wait_exit_thr_num;  //要销毁的线程个数
-
         int queue_front;            //task_queue队头下标
         int queue_rear;             //task_queue队尾下标
         int queue_size;               //task_queue队中实际任务数

@@ -17,7 +17,6 @@ Telnet连接请求，线程池的优点就不明显了。因为Telnet会话时�
 现错误. *  线程池的种类： *  线程池示例： *      1.  创建固定数量线程池
 ，循环从任务队列中获取任务对象， *      2.  获取到任务对象后，执行任务
 对象中的任务接口 */
-
 #pragma once
 
 #include<iostream>
@@ -152,6 +151,7 @@ class ThreadPool{
                     }
                     return true;
                 }
+
 };
 
 
